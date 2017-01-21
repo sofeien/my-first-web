@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>我的主页</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        body {
+            font-family: "Microsoft Yahei";
+        }
+        
+        div.container {
+            border: 0px solid black;
+        }
+        
+        header {
+            background-color: black;
+            min-width: 615px;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            z-index: 10;
+        }
+        
+        div#webtxt p {
+            color: #8a8c8e;
+        }
+        
+        div#webtxt a {
+            color: #d6caca;
+        }
+        
+        div#webtxt a:hover {
+            text-decoration: none;
+        }
+        
+        ul.nav.nav-pills {
+            margin-top: 12px;
+        }
+        
+        ul.nav.nav-pills li {
+            margin-left: 8px;
+        }
+        
+        ul.nav.nav-pills li a {
+            background-color: #333131;
+            border: 3px solid #333131;
+            color: white;
+        }
+        
+        ul.nav.nav-pills li.active a {
+            background-color: black;
+        }
+        
+        ul.nav.nav-pills li a:hover {
+            background-color: #4e4e4e;
+        }
+        
+        button.navbar-toggle {
+            border: 2px solid gray;
+            border-radius: 5px;
+            position: relative;
+            right: 20px;
+        }
+        
+        span.icon-bar {
+            background: #343030;
+        }
+        
+        nav {
+            line-height: 50px;
+            background: #b7b0b0;
+            position: fixed;
+            top: 64px;
+        }
+        
+        nav.navbar-fixed-top {
+            top: 70px;
+        }
+        
+        nav a {
+            color: black;
+            font-size: 16px;
+        }
+        
+        nav a:hover {
+            color: black;
+            font-weight: 600;
+            text-decoration: none;
+        }
+        
+        ul.nav.navbar-right {
+            margin-right: 10px;
+        }
+        
+        div#content {
+            width: 100%;
+            height: 1000px;
+            background: url('body_bg.jpg') no-repeat center center fixed;
+        }
+        
+        h1.text-center {
+            margin-top: 150px;
+            font-size: 70px;
+            color: #060608;
+        }
+        
+        h1 {
+            text-align: center;
+        }
+        
+        article#Home {
+            padding-top: 120px;
+            padding-bottom: 120px;
+        }
+        
+        hr {
+            background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(200, 200, 200, 0.8), rgba(0, 0, 0, 0));
+            width: 100%;
+            height: 2px;
+            border: 0;
+            margin-bottom: 30px;
+        }
+        
+        article#Home ul {
+            border: 0px solid white;
+            text-align: center;
+        }
+        
+        article#Home ul li {}
+        
+        article#Home ul li a {
+            color: black;
+            border: 2px outset rgba(0, 0, 0, 0.9);
+            background-color: #C0C0C0;
+            letter-spacing: 2px;
+        }
+        
+        article#Home ul li a:hover {
+            color: #eee;
+            background-color: rgba(13, 10, 10, 0.9);
+            transform: scale(1.1);
+            transition: 0.2s;
+            letter-spacing: 2px;
+        }
+        
+        article#about {
+            width: 100%;
+            background-color: orange;
+            border: 1px solid black;
+        }
+        
+        article#about div.row {
+            padding-top: 50px;
+        }
+        
+        article#about h5 {
+            font-size: 60px;
+            color: #3c3737;
+            padding-left: 11px;
+        }
+        
+        article#about pre {
+            font-size: 20px;
+            background-color: transparent;
+            border: 0;
+            font-weight: 600
+        }
+        
+        article#picWall {
+            background: #dd23e5;
+            height: 500px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div id="leftHeader" class="pull-left">
+                <img src="logo.png" style="float:left;margin-top:10px" width="45px">
+                <div id="webtxt" class="pull-left">
+                    <h3 style="margin-top:8px"><a href="#">My Web</a></h3>
+                    <p style="margin-top:-4px">A Pen By <a href="#">Sofeien</a></p>
+                </div>
+            </div>
+
+            <div id="rightHeader" class="pull-right" style="padding-right:19px">
+                <ul class="nav nav-pills">
+                    <li class="active"><a href="#">Fork</a></li>
+                    <li><a href="#">Change View</a></li>
+                    <li><a href="#">Log In</a></li>
+                    <li><a href="#">Sign Up</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <nav class="navbar navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button class="navbar-toggle" data-toggle="collapse" data-target="#test-navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a style="margin-left:25px" href="#">我的主页</a>
+            </div>
+            <div class="collapse navbar-collapse" id="test-navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div id="content">
+        <div class="container">
+            <a name="home"></a>
+            <article id="Home">
+                <h1 class="text-center">我的首个网页</h1>
+                <h1><small style="color:#211d1d">Sofeien出品</small></h1>
+                <hr>
+                <ul class="list-inline">
+                    <li><a class="btn btn-default btn-lg" href="#">Twitter</a></li>
+                    <li><a class="btn btn-default btn-lg" href="#">Github</a></li>
+                    <li><a class="btn btn-default btn-lg" href="#">Linkedin</a></li>
+                    <li><a class="btn btn-default btn-lg" href="#">freeCodeCamp</a></li>
+                </ul>
+
+
+            </article>
+
+        </div>
+
+
+
+        <article id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-6 col-md-5 col-lg-4">
+                        <h5>当你老了</h5>
+                        <pre>当你老了，头发白了，睡思昏沉
+炉火旁打盹，请取下这部诗歌　　
+慢慢读，回想你过去眼神的柔和
+回想它们昔日浓重的阴影
+
+多少人爱你青春欢畅的时辰
+爱慕你的美丽，假意和真心
+只有一个人爱你朝圣者的灵魂
+爱你衰老了的脸上痛苦的皱纹
+
+垂下头来，在红火闪耀的炉子旁
+凄然地轻轻诉说那爱情的消逝
+在头顶上的山上它缓缓地踱着步子
+在一群星星中间隐藏着脸庞</pre>
+                    </div>
+                    <div class="col-xs-6 col-md-7 col-lg-8" style="padding:10px 0 0 0">
+                        <img src="dog.jpg" alt="一副图片" class="img-responsive">
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article id="picWall">
+            123
+        </article>
+    </div>
+</body>
+
+</html>
