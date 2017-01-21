@@ -100,7 +100,7 @@
         div#content {
             width: 100%;
             height: 1000px;
-            background: url('body_bg.jpg') no-repeat center center fixed;
+            background: orange url('pic/body_bg.jpg') no-repeat center center fixed;
         }
         
         h1.text-center {
@@ -115,7 +115,7 @@
         
         article#Home {
             padding-top: 120px;
-            padding-bottom: 120px;
+            padding-bottom: 100px;
         }
         
         hr {
@@ -152,6 +152,7 @@
             width: 100%;
             background-color: orange;
             border: 1px solid black;
+            padding-bottom: 50px;
         }
         
         article#about div.row {
@@ -173,7 +174,83 @@
         
         article#picWall {
             background: #dd23e5;
-            height: 500px;
+            padding-top: 50px;
+        }
+        
+        article#picWall h3 {
+            color: #e3d4d4;
+            font-size: 40px;
+            letter-spacing: 15px;
+        }
+        
+        article#picWall p {
+            font-size: 20px;
+        }
+        
+        article#picWall section {
+            background-color: #383535;
+            padding: 5px
+        }
+        
+        article#picWall h5 {
+            color: white;
+            font-size: 25px;
+            text-align: center;
+        }
+        
+        article#picWall p {
+            color: white;
+            text-align: center;
+            font-size: 12px;
+            font-style: italic;
+            margin-top: -5px;
+        }
+        
+        article#picWall ul {
+            text-align: center;
+        }
+        
+        article#picWall ul li {
+            vertical-align: top;
+            margin-bottom: 20px;
+            margin-left: 20px;
+            padding-right: 0;
+            padding-left: 0;
+        }
+        
+        article#picWall ul li:hover {
+            box-shadow: 5px 8px 8px black;
+            transition: 0.3s;
+        }
+        
+        a[data-toggle=modal] {
+            display: block;
+            position: relative;
+            margin: 0 auto;
+        }
+        
+        .p-hover {
+            background: rgba(0, 0, 0, .7);
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+        }
+        
+        .p-hover .p-hover-content {
+            width: 100%;
+            height: 60px;
+            position: absolute;
+            top: 50%;
+        }
+        
+        .p-hover .p-hover-content span {
+            margin-top: -30px;
+        }
+        
+        a[data-toggle=modal]:hover .p-hover {
+            opacity: 0.8;
+            transition: 0.3s;
         }
     </style>
 </head>
@@ -182,7 +259,7 @@
     <header>
         <div class="container">
             <div id="leftHeader" class="pull-left">
-                <img src="logo.png" style="float:left;margin-top:10px" width="45px">
+                <img src="pic/logo.png" style="float:left;margin-top:10px" width="45px" alt="logo">
                 <div id="webtxt" class="pull-left">
                     <h3 style="margin-top:8px"><a href="#">My Web</a></h3>
                     <p style="margin-top:-4px">A Pen By <a href="#">Sofeien</a></p>
@@ -212,8 +289,8 @@
             <div class="collapse navbar-collapse" id="test-navbar-collapse">
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#abouttag">About</a></li>
+                    <li><a href="#wall">Portfolio</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
             </div>
@@ -233,6 +310,7 @@
                     <li><a class="btn btn-default btn-lg" href="#">freeCodeCamp</a></li>
                 </ul>
 
+                <a name="abouttag">&nbsp;</a>
 
             </article>
 
@@ -259,15 +337,95 @@
 凄然地轻轻诉说那爱情的消逝
 在头顶上的山上它缓缓地踱着步子
 在一群星星中间隐藏着脸庞</pre>
+                        <a name="wall">&nbsp;</a>
                     </div>
                     <div class="col-xs-6 col-md-7 col-lg-8" style="padding:10px 0 0 0">
-                        <img src="dog.jpg" alt="一副图片" class="img-responsive">
+                        <img src="pic/dog.jpg" alt="一副图片" class="img-responsive">
                     </div>
                 </div>
             </div>
         </article>
         <article id="picWall">
-            123
+            <div class="container">
+                <h3 class="text-center">照片墙</h3>
+                <p class="text-center">一些展示的图片</p>
+                <ul class="ul list-inline">
+                    <li>
+                        <a href="#" data-toggle="modal">
+                            <div class="p-hover">
+                                <div class="p-hover-content">
+                                    <span style="font-size:60px;color:red;'" class="glyphicon glyphicon-heart"></span>
+                                </div>
+                            </div>
+                            <img src="pic/wall01.jpeg" alt="图片" width="350px">
+                        </a>
+                        <section>
+                            <h5>白兔</h5>
+                            <p>可爱的兔子</p>
+                        </section>
+                    </li>
+                    <li>
+                        <a href="#" data-toggle="modal">
+                            <div class="p-hover">
+                                <div class="p-hover-content">
+                                    <span style="font-size:60px;color:red;'" class="glyphicon glyphicon-heart"></span>
+                                </div>
+                            </div><img src="pic/wall02.jpeg" alt="图片" width="350px"></a>
+                        <section>
+                            <h5>小狗</h5>
+                            <p>一只绅士的狗狗</p>
+                        </section>
+                    </li>
+                    <li>
+                        <a href="#" data-toggle="modal">
+                            <div class="p-hover">
+                                <div class="p-hover-content">
+                                    <span style="font-size:60px;color:red;'" class="glyphicon glyphicon-heart"></span>
+                                </div>
+                            </div><img src="pic/wall03.jpg" alt="图片" width="350px"></a>
+                        <section>
+                            <h5>小猫</h5>
+                            <p>认真的表情</p>
+                        </section>
+                    </li>
+                    <li>
+                        <a href="#" data-toggle="modal">
+                            <div class="p-hover">
+                                <div class="p-hover-content">
+                                    <span style="font-size:60px;color:red;'" class="glyphicon glyphicon-heart"></span>
+                                </div>
+                            </div><img src="pic/wall04.jpg" alt="图片" width="350px"></a>
+                        <section>
+                            <h5>小狗</h5>
+                            <p>乖狗狗</p>
+                        </section>
+                    </li>
+                    <li>
+                        <a href="#" data-toggle="modal">
+                            <div class="p-hover">
+                                <div class="p-hover-content">
+                                    <span style="font-size:60px;color:red;'" class="glyphicon glyphicon-heart"></span>
+                                </div>
+                            </div><img src="pic/wall05.jpg" alt="图片" width="350px"></a>
+                        <section>
+                            <h5>小猫</h5>
+                            <p>调皮的小猫在玩耍</p>
+                        </section>
+                    </li>
+                    <li>
+                        <a href="#" data-toggle="modal">
+                            <div class="p-hover">
+                                <div class="p-hover-content">
+                                    <span style="font-size:60px;color:red;'" class="glyphicon glyphicon-heart"></span>
+                                </div>
+                            </div><img src="pic/wall06.jpg" alt="图片" width="350px"></a>
+                        <section>
+                            <h5>小猫</h5>
+                            <p>小猫睡觉了</p>
+                        </section>
+                    </li>
+                </ul>
+            </div>
         </article>
     </div>
 </body>
