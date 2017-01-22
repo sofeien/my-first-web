@@ -8,8 +8,9 @@
     <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
     <style>
-        body {
+       body {
             font-family: "Microsoft Yahei";
         }
         
@@ -73,6 +74,7 @@
         
         nav {
             line-height: 50px;
+            height:50px;
             background: #b7b0b0;
             position: fixed;
             top: 64px;
@@ -99,8 +101,8 @@
         
         div#content {
             width: 100%;
-            height: 1000px;
-            background: orange url('pic/body_bg.jpg') no-repeat center center fixed;
+            
+            background: orange url('http://i1.piimg.com/584060/f396e33949ca8465.jpg') no-repeat center center fixed;
         }
         
         h1.text-center {
@@ -133,14 +135,14 @@
         
         article#Home ul li {}
         
-        article#Home ul li a {
+        article#Contact ul li a,article#Home ul li a {
             color: black;
             border: 2px outset rgba(0, 0, 0, 0.9);
             background-color: #C0C0C0;
             letter-spacing: 2px;
         }
         
-        article#Home ul li a:hover {
+        article#Contact ul li a:hover,article#Home ul li a:hover {
             color: #eee;
             background-color: rgba(13, 10, 10, 0.9);
             transform: scale(1.1);
@@ -175,6 +177,7 @@
         article#picWall {
             background: #dd23e5;
             padding-top: 50px;
+            padding-bottom:50px;
         }
         
         article#picWall h3 {
@@ -252,6 +255,43 @@
             opacity: 0.8;
             transition: 0.3s;
         }
+        
+        article#Contact {
+            background-color: aquamarine;
+            width:100%;
+            height:600px;
+            padding-top: 50px;
+        }
+
+article#Contact ul {
+    border:0px solid red;
+    width:300px;
+    margin-top: 40px;
+}
+
+article#Contact ul li {
+    margin-bottom: 20px;
+}
+
+article#Contact h2,article#Contact address {
+    font-size:40px;
+}
+
+footer {
+    background:#c9c9c9;
+    height:130px;
+    width:100%;
+    font-weight: 600
+}
+footer div.container {
+    padding-top: 35px;
+}
+
+footer p {
+    margin-top: 20px;
+    font-size:10px;
+    color:#717169;
+} 
     </style>
 </head>
 
@@ -259,7 +299,7 @@
     <header>
         <div class="container">
             <div id="leftHeader" class="pull-left">
-                <img src="pic/logo.png" style="float:left;margin-top:10px" width="45px" alt="logo">
+                <img src="http://i1.piimg.com/584060/5ee0e0cf1d07036c.png" style="float:left;margin-top:10px" width="45px" alt="logo">
                 <div id="webtxt" class="pull-left">
                     <h3 style="margin-top:8px"><a href="#">My Web</a></h3>
                     <p style="margin-top:-4px">A Pen By <a href="#">Sofeien</a></p>
@@ -290,8 +330,8 @@
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="#home">Home</a></li>
                     <li><a href="#abouttag">About</a></li>
-                    <li><a href="#wall">Portfolio</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#wall">Picwall</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
         </div>
@@ -340,7 +380,7 @@
                         <a name="wall">&nbsp;</a>
                     </div>
                     <div class="col-xs-6 col-md-7 col-lg-8" style="padding:10px 0 0 0">
-                        <img src="pic/dog.jpg" alt="一副图片" class="img-responsive">
+                        <img src="http://i1.piimg.com/584060/608a3dd4d0f5afb0.jpg" alt="一副图片" class="img-responsive">
                     </div>
                 </div>
             </div>
@@ -357,7 +397,7 @@
                                     <span style="font-size:60px;color:red;'" class="glyphicon glyphicon-heart"></span>
                                 </div>
                             </div>
-                            <img src="pic/wall01.jpeg" alt="图片" width="350px">
+                            <img src="http://i1.piimg.com/584060/46e08da22c6a52f3.jpg" alt="图片" width="350px">
                         </a>
                         <section>
                             <h5>白兔</h5>
@@ -370,7 +410,7 @@
                                 <div class="p-hover-content">
                                     <span style="font-size:60px;color:red;'" class="glyphicon glyphicon-heart"></span>
                                 </div>
-                            </div><img src="pic/wall02.jpeg" alt="图片" width="350px"></a>
+                            </div><img src="http://i1.piimg.com/584060/1f6c3853b480339b.jpg" alt="图片" width="350px"></a>
                         <section>
                             <h5>小狗</h5>
                             <p>一只绅士的狗狗</p>
@@ -382,7 +422,7 @@
                                 <div class="p-hover-content">
                                     <span style="font-size:60px;color:red;'" class="glyphicon glyphicon-heart"></span>
                                 </div>
-                            </div><img src="pic/wall03.jpg" alt="图片" width="350px"></a>
+                            </div><img src="http://i1.piimg.com/584060/1cb5b7d93dcc8daf.jpg" alt="图片" width="350px"></a>
                         <section>
                             <h5>小猫</h5>
                             <p>认真的表情</p>
@@ -394,7 +434,7 @@
                                 <div class="p-hover-content">
                                     <span style="font-size:60px;color:red;'" class="glyphicon glyphicon-heart"></span>
                                 </div>
-                            </div><img src="pic/wall04.jpg" alt="图片" width="350px"></a>
+                            </div><img src="http://i1.piimg.com/584060/11255d854b2ce560.jpg" alt="图片" width="350px"></a>
                         <section>
                             <h5>小狗</h5>
                             <p>乖狗狗</p>
@@ -406,7 +446,7 @@
                                 <div class="p-hover-content">
                                     <span style="font-size:60px;color:red;'" class="glyphicon glyphicon-heart"></span>
                                 </div>
-                            </div><img src="pic/wall05.jpg" alt="图片" width="350px"></a>
+                            </div><img src="http://i1.piimg.com/584060/6cdc5f4dd15b5446.jpg" alt="图片" width="350px"></a>
                         <section>
                             <h5>小猫</h5>
                             <p>调皮的小猫在玩耍</p>
@@ -418,7 +458,7 @@
                                 <div class="p-hover-content">
                                     <span style="font-size:60px;color:red;'" class="glyphicon glyphicon-heart"></span>
                                 </div>
-                            </div><img src="pic/wall06.jpg" alt="图片" width="350px"></a>
+                            </div><img src="http://i1.piimg.com/584060/e45d5a0edb2502e8.jpg" alt="图片" width="350px"></a>
                         <section>
                             <h5>小猫</h5>
                             <p>小猫睡觉了</p>
@@ -426,8 +466,42 @@
                     </li>
                 </ul>
             </div>
+            <a name="contact" style="position:relative;top:-50px;">&nbsp;</a>
         </article>
+        
+        <article id="Contact">
+            <div class="container">
+            <div class="row">
+                <div class="col-xs-6 col-md-7">
+                    <h2>Connect with me:</h2> 
+                    <address>444023990@qq.com</address>
+                </div>
+                <div class="col-xs-6 col-md-5">
+                    <ul class="nav nav-pills nav-stacked">
+                    <li><a class="btn btn-default btn-lg" href="#">Twitter</a></li>
+                    <li><a class="btn btn-default btn-lg" href="#">Github</a></li>
+                    <li><a class="btn btn-default btn-lg" href="#">Linkedin</a></li>
+                    <li><a class="btn btn-default btn-lg" href="#">freeCodeCamp</a></li>
+                </ul> 
+                </div>
+            </div>
+          </div>                                                  
+        </article>
+        
     </div>
+    <footer>
+        <div class="container">
+        <ul class="list-inline">
+            <li><a href="#home">Home</a></li>
+            <li>⋅</li>
+            <li><a href="#abouttag">About</a></li>
+            <li>⋅</li>
+            <li><a href="#wall">Picwall</a></li>
+            <li>⋅</li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+            <p>Copyright © Infinito Web Design Studio 2015. All Rights Reserved</p>
+            </div>
+    </footer>
 </body>
-
 </html>

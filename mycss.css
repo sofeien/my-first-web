@@ -1,0 +1,281 @@
+body {
+            font-family: "Microsoft Yahei";
+        }
+        
+        div.container {
+            border: 0px solid black;
+        }
+        
+        header {
+            background-color: black;
+            min-width: 615px;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            z-index: 10;
+        }
+        
+        div#webtxt p {
+            color: #8a8c8e;
+        }
+        
+        div#webtxt a {
+            color: #d6caca;
+        }
+        
+        div#webtxt a:hover {
+            text-decoration: none;
+        }
+        
+        ul.nav.nav-pills {
+            margin-top: 12px;
+        }
+        
+        ul.nav.nav-pills li {
+            margin-left: 8px;
+        }
+        
+        ul.nav.nav-pills li a {
+            background-color: #333131;
+            border: 3px solid #333131;
+            color: white;
+        }
+        
+        ul.nav.nav-pills li.active a {
+            background-color: black;
+        }
+        
+        ul.nav.nav-pills li a:hover {
+            background-color: #4e4e4e;
+        }
+        
+        button.navbar-toggle {
+            border: 2px solid gray;
+            border-radius: 5px;
+            position: relative;
+            right: 20px;
+        }
+        
+        span.icon-bar {
+            background: #343030;
+        }
+        
+        nav {
+            line-height: 50px;
+            background: #b7b0b0;
+            position: fixed;
+            top: 64px;
+        }
+        
+        nav.navbar-fixed-top {
+            top: 70px;
+        }
+        
+        nav a {
+            color: black;
+            font-size: 16px;
+        }
+        
+        nav a:hover {
+            color: black;
+            font-weight: 600;
+            text-decoration: none;
+        }
+        
+        ul.nav.navbar-right {
+            margin-right: 10px;
+        }
+        
+        div#content {
+            width: 100%;
+            
+            background: orange url('pic/body_bg.jpg') no-repeat center center fixed;
+        }
+        
+        h1.text-center {
+            margin-top: 150px;
+            font-size: 70px;
+            color: #060608;
+        }
+        
+        h1 {
+            text-align: center;
+        }
+        
+        article#Home {
+            padding-top: 120px;
+            padding-bottom: 100px;
+        }
+        
+        hr {
+            background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(200, 200, 200, 0.8), rgba(0, 0, 0, 0));
+            width: 100%;
+            height: 2px;
+            border: 0;
+            margin-bottom: 30px;
+        }
+        
+        article#Home ul {
+            border: 0px solid white;
+            text-align: center;
+        }
+        
+        article#Home ul li {}
+        
+        article#Contact ul li a,article#Home ul li a {
+            color: black;
+            border: 2px outset rgba(0, 0, 0, 0.9);
+            background-color: #C0C0C0;
+            letter-spacing: 2px;
+        }
+        
+        article#Contact ul li a:hover,article#Home ul li a:hover {
+            color: #eee;
+            background-color: rgba(13, 10, 10, 0.9);
+            transform: scale(1.1);
+            transition: 0.2s;
+            letter-spacing: 2px;
+        }
+        
+        article#about {
+            width: 100%;
+            background-color: orange;
+            border: 1px solid black;
+            padding-bottom: 50px;
+        }
+        
+        article#about div.row {
+            padding-top: 50px;
+        }
+        
+        article#about h5 {
+            font-size: 60px;
+            color: #3c3737;
+            padding-left: 11px;
+        }
+        
+        article#about pre {
+            font-size: 20px;
+            background-color: transparent;
+            border: 0;
+            font-weight: 600
+        }
+        
+        article#picWall {
+            background: #dd23e5;
+            padding-top: 50px;
+            padding-bottom:50px;
+        }
+        
+        article#picWall h3 {
+            color: #e3d4d4;
+            font-size: 40px;
+            letter-spacing: 15px;
+        }
+        
+        article#picWall p {
+            font-size: 20px;
+        }
+        
+        article#picWall section {
+            background-color: #383535;
+            padding: 5px
+        }
+        
+        article#picWall h5 {
+            color: white;
+            font-size: 25px;
+            text-align: center;
+        }
+        
+        article#picWall p {
+            color: white;
+            text-align: center;
+            font-size: 12px;
+            font-style: italic;
+            margin-top: -5px;
+        }
+        
+        article#picWall ul {
+            text-align: center;
+        }
+        
+        article#picWall ul li {
+            vertical-align: top;
+            margin-bottom: 20px;
+            margin-left: 20px;
+            padding-right: 0;
+            padding-left: 0;
+        }
+        
+        article#picWall ul li:hover {
+            box-shadow: 5px 8px 8px black;
+            transition: 0.3s;
+        }
+        
+        a[data-toggle=modal] {
+            display: block;
+            position: relative;
+            margin: 0 auto;
+        }
+        
+        .p-hover {
+            background: rgba(0, 0, 0, .7);
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+        }
+        
+        .p-hover .p-hover-content {
+            width: 100%;
+            height: 60px;
+            position: absolute;
+            top: 50%;
+        }
+        
+        .p-hover .p-hover-content span {
+            margin-top: -30px;
+        }
+        
+        a[data-toggle=modal]:hover .p-hover {
+            opacity: 0.8;
+            transition: 0.3s;
+        }
+        
+        article#Contact {
+            background-color: aquamarine;
+            width:100%;
+            height:600px;
+            padding-top: 50px;
+        }
+
+article#Contact ul {
+    border:0px solid red;
+    width:300px;
+    margin-top: 40px;
+}
+
+article#Contact ul li {
+    margin-bottom: 20px;
+}
+
+article#Contact h2,article#Contact address {
+    font-size:40px;
+}
+
+footer {
+    background:#c9c9c9;
+    height:130px;
+    width:100%;
+    font-weight: 600
+}
+footer div.container {
+    padding-top: 35px;
+}
+
+footer p {
+    margin-top: 20px;
+    font-size:10px;
+    color:#717169;
+}
